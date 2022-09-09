@@ -22,6 +22,7 @@ main {
 }
 .container {
   display: flex;
+  margin-top: 15%;
 }
 
 .image {
@@ -30,6 +31,8 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .perfume-info {
@@ -41,6 +44,8 @@ main {
   background-color: white;
   padding: 30px;
   margin: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .perfume-title {
@@ -49,19 +54,20 @@ main {
   font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 3px;
-  color: rgb(170, 170, 170);
+  color: hsl(228, 12%, 48%);
 }
 
 .perfume-name {
   font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  color: hsl(212, 21%, 14%);
 }
 
 .perfume-description {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: rgb(170, 170, 170);
+  color: hsl(228, 12%, 48%);
   line-height: 2rem;
   font-size: 1.4rem;
 }
@@ -79,6 +85,33 @@ main {
   font-size: 3rem;
 }
 
+.price-original {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  padding-right: 50px;
+}
+
+.button {
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 14px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button svg {
+  margin-right: 10px;
+}
+
 @media (max-width: 375px) {
   .container {
     flex-direction: column;
@@ -92,7 +125,8 @@ main {
 
   .image {
     height: 250px;
-
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
     background-image: url(/images/image-product-mobile.jpg);
     background-position: center;
     background-size: cover;
@@ -101,5 +135,11 @@ main {
   .perfume-info {
     height: 365px;
     padding: 28px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .price-original {
+    padding-right: 100px;
   }
 }
