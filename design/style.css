@@ -22,7 +22,7 @@ main {
 }
 .container {
   display: flex;
-  margin-top: 15%;
+  margin-top: 13%;
 }
 
 .image {
@@ -106,10 +106,15 @@ main {
   padding: 14px 30px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .button svg {
   margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #1a4031;
 }
 
 @media (max-width: 375px) {
